@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blox Fruits Database - Fighting Styles, Accessories & Guns</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --sea1: #ef4444;
+            --sea2: #f59e0b;
+            --sea3: #10b981;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            line-height: 1.5;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            color: var(--accent-color);
+            margin-bottom: 5px;
+        }
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .tab-btn {
+            background: var(--card-bg);
+            color: var(--text-main);
+            border: 2px solid transparent;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover {
+            border-color: var(--accent-color);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 5px solid transparent;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        .sea-1 { border-left-color: var(--sea1); }
+        .sea-2 { border-left-color: var(--sea2); }
+        .sea-3 { border-left-color: var(--sea3); }
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .badge {
+            font-size: 0.75rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #fff;
+            font-weight: bold;
+        }
+        .badge-1 { background-color: var(--sea1); }
+        .badge-2 { background-color: var(--sea2); }
+        .badge-3 { background-color: var(--sea3); }
+        .section-label {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: var(--accent-color);
+            margin-top: 15px;
+            margin-bottom: 2px;
+            font-weight: bold;
+        }
+        .buff-list {
+            margin: 0;
+            padding-left: 20px;
+            color: #e2e8f0;
+        }
+        .info-text {
+            margin: 0;
+            color: var(--text-muted);
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-top: 40px;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 10px;
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blox Fruits Comprehensive Companion</h1>
+    <p style="color: var(--text-muted);">Every Fighting Style, Key Accessory, and Gun broken down by Sea, Requirements, and Buffs</p>
+</header>
+
+<h2 class="section-title">⚔️ Fighting Styles</h2>
+<div class="grid">
+    <!-- Combat -->
+    <div class="card sea-1">
+        <div class="card-title">Combat <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Basic visual appearance: Bare fists. Features standard left-click punch combos, Ground Smash, and Rush moves.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Starting fighting style for all players. Cannot be re-learned if changed.</p>
+    </div>
+    <!-- Dark Step -->
+    <div class="card sea-1">
+        <div class="card-title">Dark Step <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Flaming legs when using 'Overheat'. Buffs: Increases kick speed/AOE damage via skills.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $150,000. Bought from the <strong>Dark Step Teacher</strong> at Pirate Village.</p>
+    </div>
+    <!-- Electric -->
+    <div class="card sea-1">
+        <div class="card-title">Electric <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Blue electrical sparks around hands. Features fast stuns and dashes.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $500,000. Bought from the <strong>Mad Scientist</strong> at Skylands (lower levels).</p>
+    </div>
+    <!-- Water Kung Fu -->
+    <div class="card sea-1">
+        <div class="card-title">Water Kung Fu <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Water-splash effects. Highest M1 punch speed in the First Sea.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $750,000. Bought from the <strong>Water Kung Fu Teacher</strong> at Underwater City.</p>
+    </div>
+    <!-- Dragon Breath -->
+    <div class="card sea-2">
+        <div class="card-title">Dragon Breath <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Purple dragon-fire breaths and explosive impacts.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: 1,500 Fragments. Bought from <strong>Sabi</strong> at the Kingdom of Rose (inside the wall arches).</p>
+    </div>
+    <!-- Superhuman -->
+    <div class="card sea-2">
+        <div class="card-title">Superhuman <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: High-speed sonic impacts and wind distortions. Incredible for combos.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $3,000,000. Requires 300+ Mastery on Dark Step, Electric, Water Kung Fu, and Dragon Breath. Bought from <strong>Martial Arts Master</strong> at Snow Mountain.</p>
+    </div>
+    <!-- Death Step -->
+    <div class="card sea-2">
+        <div class="card-title">Death Step <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Intense purple/vermilion flames on legs. Huge upgrade to Dark Step damage.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $2,500,000 + 5,000 Fragments. Requires 400 Mastery on Dark Step and Library Key drop from Awakened Ice Admiral. Bought from <strong>Phoeyu the Reformed</strong> at Ice Castle.</p>
+    </div>
+    <!-- Sharkman Karate -->
+    <div class="card sea-2">
+        <div class="card-title">Sharkman Karate <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Giant pressure waves and massive water blasts. Extremely consistent hitboxes.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $2,500,000 + 5,000 Fragments. Requires 400 Mastery on Water Kung Fu and Water Key drop from Tide Keeper. Bought from <strong>Sharkman Teacher</strong> at Forgotten Island.</p>
+    </div>
+    <!-- Electric Claw -->
+    <div class="card sea-3">
+        <div class="card-title">Electric Claw <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Red/golden lightning claws. Extemely rapid M1 click speed.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $3,000,000 + 5,000 Fragments. Requires 400 Mastery on Electric. Complete a 30-second run quest for <strong>Previous Hero</strong> at Floating Turtle.</p>
+    </div>
+    <!-- Dragon Talon -->
+    <div class="card sea-3">
+        <div class="card-title">Dragon Talon <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Massive fiery dragon claws and giant fire explosion fields.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $3,000,000 + 5,000 Fragments. Requires 400 Mastery on Dragon Breath and a Fire Essence from the Haunted Castle Death King gacha. Given to <strong>Uzoth</strong> at Haunted Castle.</p>
+    </div>
+    <!-- Godhuman -->
+    <div class="card sea-3">
+        <div class="card-title">Godhuman <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Golden ancient shockwaves and dynamic multi-target rushes.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $5,000,000 + 5,000 Fragments. Requires 400 Mastery on Superhuman, Death Step, Sharkman Karate, Electric Claw, and Dragon Talon + various island materials. Bought from <strong>Ancient Monk</strong> inside Floating Turtle tree.</p>
+    </div>
+    <!-- Sanguine Art -->
+    <div class="card sea-3">
+        <div class="card-title">Sanguine Art <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Buffs / Moves</div>
+        <p class="info-text">Visual: Dark blood-red energy tentacles and lifesteal properties.</p>
+        <div class="section-label">How to Get & Location</div>
+        <p class="info-text">Cost: $5,000,000 + 5,000 Fragments. Requires Leviathan Heart, 20 Demonic Wisps, and 20 Vampire Fangs. Taught by <strong>Shafi</strong> in the Third Sea outposts.</p>
+    </div>
+</div>
+
+<h2 class="section-title">👑 Key Accessories & Stats</h2>
+<div class="grid">
+    <div class="card sea-1">
+        <div class="card-title">Warrior Helmet <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Visual Appearance</div>
+        <p class="info-text">A gladiator-style spiked helmet worn over the character's head.</p>
+        <div class="section-label">Exact Buffs</div>
+        <ul class="buff-list">
+            <li>+12.5% Melee Damage</li>
+            <li>+12.5% Sword Damage</li>
+            <li>-5% Melee cooldowns</li>
+        </ul>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Reward for completing the Bartilo Quest line / defeating Marine Commodore targets.</p>
+    </div>
+    <div class="card sea-2">
+        <div class="card-title">Swan Glasses <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Visual Appearance</div>
+        <p class="info-text">Stylish pink-tinted flamingo sunglasses.</p>
+        <div class="section-label">Exact Buffs</div>
+        <ul class="buff-list">
+            <li>+8% Overall Damage (All types)</li>
+            <li>+8% Defense against all attacks</li>
+            <li>+8% Cooldown Reduction</li>
+            <li>+25% Movement Speed</li>
+            <li>+250 Health & Energy</li>
+        </ul>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Rare 2.5% drop from defeating <strong>Don Swan</strong> at the Swan Mansion.</p>
+    </div>
+    <div class="card sea-3">
+        <div class="card-title">Pale Scarf <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Visual Appearance</div>
+        <p class="info-text">A long, tattered white/cream scarf wrapped around the neck.</p>
+        <div class="section-label">Exact Buffs</div>
+        <ul class="buff-list">
+            <li>+15% Sword Damage</li>
+            <li>+15% Blox Fruit Damage</li>
+            <li>+2 Instinct Dodges</li>
+            <li>10x Instinct Vision Range</li>
+        </ul>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">100% drop guaranteed from defeating <strong>Cake Prince</strong> or <strong>Dough King</strong> at the Sea of Treats.</p>
+    </div>
+    <div class="card sea-3">
+        <div class="card-title">Hunter's Cape <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Visual Appearance</div>
+        <p class="info-text">A long fluid cape available in Black, Green, or Red variations.</p>
+        <div class="section-label">Exact Buffs</div>
+        <ul class="buff-list">
+            <li>+10% Melee, Sword, and Gun Damage</li>
+            <li>+80% Movement Speed</li>
+            <li>+750 Health</li>
+        </ul>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Dropped randomly by <strong>Elite Pirates</strong> (Diablo, Deandre, Urban) via the Elite Hunter quests.</p>
+    </div>
+</div>
+
+<h2 class="section-title">🔫 Notable Guns</h2>
+<div class="grid">
+    <div class="card sea-1">
+        <div class="card-title">Cannon <span class="badge badge-1">First Sea</span></div>
+        <div class="section-label">Visual & Utility</div>
+        <p class="info-text">A massive handheld black cannon. Fires slow but highly explosive knockback balls.</p>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Purchased for $100,000 from the <strong>Advanced Weapon Dealer</strong> at Pirate Village.</p>
+    </div>
+    <div class="card sea-2">
+        <div class="card-title">Acidum Rifle <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Visual & Utility</div>
+        <p class="info-text">A metallic mossy green vintage rifle. Inflicts stackable ticking acid poison damage.</p>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Encountered as a rare drop from the <strong>Factory Raid</strong> event at the Kingdom of Rose.</p>
+    </div>
+    <div class="card sea-2">
+        <div class="card-title">Kabucha <span class="badge badge-2">Second Sea</span></div>
+        <div class="section-label">Visual & Utility</div>
+        <p class="info-text">A giant black multi-layered slingshot. Known for the absolute fastest gun click-rate for rapid stuns.</p>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Purchased from the <strong>Usopp island NPC</strong> for 1,500 Fragments after beating the raid boss.</p>
+    </div>
+    <div class="card sea-3">
+        <div class="card-title">Soul Guitar <span class="badge badge-3">Third Sea</span></div>
+        <div class="section-label">Visual & Utility</div>
+        <p class="info-text">A skeleton-themed electric rock guitar that fires soul beams and notes. The undisputed best support gun in the game.</p>
+        <div class="section-label">How to Get</div>
+        <p class="info-text">Crafted at the Haunted Castle machine during a Full Moon after completing 5 structural puzzles. Costs 500 Bones, 250 Ectoplasm, 1 Dark Fragment, and 5,000 Fragments.</p>
+    </div>
+</div>
+
+</body>
+</html>
